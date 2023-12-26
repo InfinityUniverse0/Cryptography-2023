@@ -43,6 +43,8 @@ unsigned int SPN_GenPair(unsigned int K) {
 
 See `LinearAnalysis.cpp` [LinearAnalysis.cpp](./LinearAnalysis.cpp).
 
+文档详见 [2112515-信息安全-武桐西-Ex01.md](./2112515-信息安全-武桐西-Ex01.md)。
+
 SPN 的结构同上。
 
 线性分析的实现参考了教材中的方法和伪代码。
