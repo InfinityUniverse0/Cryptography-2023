@@ -40,10 +40,14 @@ bool Miller_Rabin(long long int n, int round = 5) {
         
         if (b == 1) continue;
         for (int i = 0; i < k; i++) {
-            if (b == n - 1) continue;
+            if (b == n - 1) {
+                b = 1;
+                break;
+            }
             b = square_and_mul(b, 2, n);
         }
-        return false;
+        if (b != 1)
+            return false; // Failed Fermat test
     }
     return true;
 }
